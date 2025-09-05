@@ -1,6 +1,3 @@
-marketing-invoice
-
-A simple marketing invoice that can be used on marketing letters via Email.
 Hi, I'm Deon! 👋
 🚀 About Me
 
