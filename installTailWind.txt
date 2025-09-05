@@ -1,0 +1,38 @@
+01: Install Tailwind CSS (terminal)
+Install tailwindcss and @tailwindcss/cli via npm.
+code:
+npm install tailwindcss @tailwindcss/cli
+
+02: Import Tailwind in your CSS (src/input.css)
+Add the @import "tailwindcss"; import to your main CSS file.
+code:
+@import "tailwindcss";
+
+03: Start the Tailwind CLI build process (terminal)
+Run the CLI tool to scan your source files for classes and build your CSS.
+code:
+npx @tailwindcss/cli -i input.css -o output.css --watch
+
+04: Start using Tailwind in your HTML (index.html)
+Add your compiled CSS file to the <head> and start using Tailwind’s utility classes to style your content.
+code (html -> head):
+<link href="./output.css" rel="stylesheet">
+
+<!-- <!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-->
+
+  <link href="./output.css" rel="stylesheet">
+
+<!--
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</body>
+</html>
+-->
